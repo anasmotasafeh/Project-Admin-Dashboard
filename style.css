@@ -50,6 +50,76 @@ html {
   scroll-behavior: smooth;
 }
 
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
 
+header{
+  background-color: rgb(213, 207, 195);
+  /* padding-top: 20px; */
+  padding: 20px;
+  grid-column: 2 / 5;
+  display: grid;
+  grid-template-rows: auto auto;
+}
 
+.top-bar {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.user-actions {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.user {
+  display: flex;
+}
+
+.bottom-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: last baseline;
+}
+
+.user-info{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.header-buttons {
+  justify-self: right;
+}
+
+.sidebar{
+  background-color: rgb(102, 162, 235);
+  padding-top: 20px;
+  padding-left: 20px;
+  grid-row: span 2;
+  display: grid;
+    grid-template-rows: auto 1fr auto; /* brand / nav / settings */
+  height: 100%; 
+}
+
+main {
+  background-color: orange;
+  padding: 20px;
+  grid-column: 2 / 5;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  
+}
+
+.projects-cards{
+  background-color: aquamarine;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.right-panel {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
 
